@@ -13,14 +13,23 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image1]: ./training_data.png
+[image2]: ./validation_data.png
+[image3]: ./testing_data.png
+[image4]: ./grayscale_image.png
+[image5]: ./original_image.png
+[image6]: ./rotated_image.png
+[image7]: ./Test_image_0.png
+[image8]: ./Test_image_1.png
+[image9]: ./Test_image_2.png
+[image10]: ./Test_image_3.png
+[image11]: ./Test_image_4.png
+[image12]: ./Probability_image_0.png
+[image13]: ./Probability_image_1.png
+[image14]: ./Probability_image_2.png
+[image15]: ./Probability_image_3.png
+[image16]: ./Probability_image_4.png
+
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -46,9 +55,9 @@ The code for this step is contained in the third code cell of the IPython notebo
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data is distributed
 
-![Training data][./training_data.png]
-![Validation data][./validation_data.png]
-![Testing data][./testing_data.png]
+![Training data][image1]
+![Validation data][image2]
+![Testing data][image3]
 
 ###Design and Test a Model Architecture
 
@@ -58,14 +67,14 @@ As a first step, I decided to convert the images to grayscale because it reduces
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-![Grayscale image][./grayscale_image.png]
+![Grayscale image][image4]
 
 The forth code cell of the IPython notebook contains the code for augmenting the data set. I decided to generate additional data because some images had very less number of samples such as pedestrian. To add more data to the the data set, I skimage transform pakcage to rotate images by different angles. I created new images only for images with low number of samples. 
 
 Here is an example of an original image and an augmented image:
 
-![Original Image][./original_image.png]
-![Rotated Image][./rotated_image.png]
+![Original Image][image5]
+![Rotated Image][image6]
 
 The code for my final model is located in the seventh cell of the ipython notebook. 
 
@@ -122,8 +131,8 @@ My final model results were:
 
 Here are five German traffic signs that I found on the web:
 
-![Yield][./Test_image_0.png] ![No passing][./Test_image_1.png] ![Speed limit (70km/h)][./Test_image_2.png] 
-![No entry][./Test_image_3.png] ![Speed limit (120km/h)][./Test_image_4.png]
+![Yield][image7] ![No passing][image8] ![Speed limit (70km/h)][image9] 
+![No entry][image10] ![Speed limit (120km/h)][image11]
 
 The code for making predictions on my final model is located in the 14th cell of the Ipython notebook.
 
@@ -152,7 +161,7 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 | .11	      			| Bumpy road					 				|
 | .10				    | Keep right      								|
 
-![Probability graph][./Probability_image_0.png]
+![Probability graph][image12]
 
 For the second image ... 
 
@@ -164,7 +173,7 @@ For the second image ...
 | .09	      			| End of no passing					 			|
 | .07				    | Dangerous curve to the left      				|
 
-![Probability graph][./Probability_image_1.png]
+![Probability graph][image13]
 
 For the third image ... 
 
@@ -176,7 +185,7 @@ For the third image ...
 | .05	      			| No vehicles					 				|
 | .05				    | Speed limit (30km/h)      					|
 
-![Probability graph][./Probability_image_2.png]
+![Probability graph][image14]
 
 For the forth image ... 
 
@@ -188,7 +197,7 @@ For the forth image ...
 | .06	      			| Turn left ahead				 				|
 | .04				    | End of no passing      						|
 
-![Probability graph][./Probability_image_3.png]
+![Probability graph][image15]
 
 For the firth image ... 
 
@@ -200,5 +209,5 @@ For the firth image ...
 | .07	      			| Speed limit (70km/h)			 				|
 | .07				    | Go straight or left      						|
 
-![Probability graph][./Probability_image_4.png]
+![Probability graph][image16]
 
