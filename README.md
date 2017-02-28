@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [image1]: ./training_data.png
 [image2]: ./validation_data.png
-[image3]: ./testing_data.png
+[image3]: ./test_data.png
 [image4]: ./grayscale_image.png
 [image5]: ./original_image.png
 [image6]: ./rotated_image.png
@@ -24,11 +24,11 @@ The goals / steps of this project are the following:
 [image9]: ./Test_image_2.png
 [image10]: ./Test_image_3.png
 [image11]: ./Test_image_4.png
-[image12]: ./Probability_image_0.png
-[image13]: ./Probability_image_1.png
-[image14]: ./Probability_image_2.png
-[image15]: ./Probability_image_3.png
-[image16]: ./Probability_image_4.png
+[image12]: ./probability_image_0.png
+[image13]: ./probability_image_1.png
+[image14]: ./probability_image_2.png
+[image15]: ./probability_image_3.png
+[image16]: ./probability_image_4.png
 
 
 ## Rubric Points
